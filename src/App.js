@@ -11,7 +11,17 @@ import SingleCocktail from "./pages/singleCocktail";
 import Navbar from "./components/navbar";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/cocktail/:id" element={<SingleCocktail />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
