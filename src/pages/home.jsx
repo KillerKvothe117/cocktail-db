@@ -3,7 +3,12 @@ import CocktailList from "../components/cocktailList";
 import SearchForm from "../components/searchForm";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <main>
+      <SearchForm />
+      <CocktailList />
+    </main>
+  );
 };
 
 export default Home;
