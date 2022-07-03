@@ -1,8 +1,14 @@
-import React, { useState, useContext, useCallback, useEffect } from "react";
+import React, {
+  useState,
+  useContext,
+  useCallback,
+  useEffect,
+  createContext,
+} from "react";
 import axios from "axios";
 
 const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-const AppContext = React.createContext();
+const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -12,7 +18,7 @@ const AppProvider = ({ children }) => {
   const fetchDrinks = async () => {
     setLoading(true);
     try {
-      const response = await axios.get((`${url}${searchTerm}`));
+      const response = await axios.get(`${url}${searchTerm}`);
       const { drinks } = response.data;
       if (drinks) {
         const newCocktails = drinks.map((item) => {
