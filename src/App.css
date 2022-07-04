@@ -88,7 +88,6 @@ Buttons
   font-size: 0.8rem;
   background: transparent;
   border-radius: var(--mainBorderRadius);
-  display: inline-block;
 }
 .btn:hover {
   background: var(--primaryColor);
