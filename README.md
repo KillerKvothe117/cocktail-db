@@ -1,4 +1,4 @@
-#Cocktail DB
+# Cocktail DB
 
 This is a project to display information about different cocktail drinks and instructions on how to make them.
 
