@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+#Cocktail DB
+
+This is a project to display information about different cocktail drinks and instructions on how to make them.
+
+The site can be accessed here: [TheCocktailDB](https://cocktail-db-nine.vercel.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
